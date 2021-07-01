@@ -16,7 +16,7 @@ public class Variable {
 
        int total = 0; //ආරම්භක මුළු එකතුව =  0
        int mondayIncome = mondayHours*HOUR_PRICE;
-       total = total+mondayIncome;//මුළු එකතුව = පරණ මුළු එකතුව + සදුදා ආදායම 
+       total = total+mondayIncome;//මුළු එකතුව = පරණ මුළු එකතුව + සදුදා ආදායම
        System.out.println("TOTAL :"+total);
        int tuesdayIncome = tuesdayHours*HOUR_PRICE;
        total = total +tuesdayIncome;

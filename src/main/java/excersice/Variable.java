@@ -2,10 +2,6 @@ package excersice;
 
 public class Variable {
     public static void main(String[] args) {
-        /**
-         * Java
-         */
-
 //        Define a variable named number1 by assigning 40 to it.
         int number1 = 40;
 //        Define a variable named number2 by assigning 20 to it.
