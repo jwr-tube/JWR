@@ -16,13 +16,26 @@ public class ArrayRevision {
         fixedDepositEmail(savingAccounts);
     }
 
-    static void fixedDepositEmail(SavingAccount[] savingAccount) {
-        for (int i = 0; i < savingAccount.length; i++) {
-            if (savingAccount[i].getBalance() >= 10000) {
-                String name = savingAccount[i].getAccountHolderName();
+    static void fixedDepositEmail(SavingAccount[] savingAccounts) {
+        System.out.println("using for loop");
+        for (int i = 0; i < savingAccounts.length; i++) {
+            if (savingAccounts[i].getBalance() >= 10000) {
+                String name = savingAccounts[i].getAccountHolderName();
                 System.out.println("Dear " + name + ", You should start a fixed deposit account");
             }
         }
+
+        /*
+        foreach කියන  for loop එකෙනුත් මේ වැඩේ කර ගන්න පුළුවන් එක use කරන්නන object එක්ක වැඩ කරද්දී
+         */
+        System.out.println("using for each loop");
+        for (SavingAccount savingAccount: savingAccounts) {
+            if (savingAccount.getBalance()>=10000){
+                String name = savingAccount.getAccountHolderName();
+                System.out.println("Dear " + name + ", You should start a fixed deposit account");
+            }
+        }
+
     }
 }
 
