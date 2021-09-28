@@ -1441,6 +1441,34 @@ public class CollectionMethods {
 
         System.out.println(numbers);
     }
+
+    /*
+    Create a priority queue named number queue
+    Add following values
+        15
+        65
+        8
+        11
+        6
+        9
+    Poll and print them.
+    */
+    private void question35(){
+        Queue<Integer> numberQueue = new PriorityQueue<>();
+        numberQueue.add(15);
+        numberQueue.add(65);
+        numberQueue.add(8);
+        numberQueue.add(11);
+        numberQueue.add(6);
+        numberQueue.add(9);
+
+        System.out.println(numberQueue.poll());
+        System.out.println(numberQueue.poll());
+        System.out.println(numberQueue.poll());
+        System.out.println(numberQueue.poll());
+        System.out.println(numberQueue.poll());
+        System.out.println(numberQueue.poll());
+    }
 }
 
 /*
